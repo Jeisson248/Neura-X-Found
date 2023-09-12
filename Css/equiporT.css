@@ -1,0 +1,73 @@
+.requisitos-section {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.requisitos-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.requisitos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.requisito {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.requisito p {
+    font-size: 16px;
+    margin: 0;
+}
+.bienvenida-section {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+.bienvenida-section h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.bienvenida-section p {
+    font-size: 18px;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.requisitos-section {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.requisitos-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.requisitos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.requisito {
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+}
+
+.requisito img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}

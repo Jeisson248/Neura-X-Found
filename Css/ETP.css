@@ -1,0 +1,126 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para el contenedor de los cuadros */
+.cuadros {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Estilos para los cuadros */
+.cuadro {
+    background-color: #e0e0e0;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.cuadro img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.cuadro p {
+    font-size: 14px;
+    color: #333;
+}
+
+.boton-compra {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.boton-compra:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para los cuadros de texto normales */
+.cuadro-texto {
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.cuadro-texto h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.cuadro-texto p {
+    font-size: 14px;
+    color: #333;
+}
+
+/* Estilos para los cuadros de texto especiales */
+.cuadros-texto-especiales {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.cuadro-texto-especial {
+    background-color: rgb(123, 212, 235);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.cuadro-texto-especial h3 {
+    font-size: 25px;
+    margin-bottom: 8px;
+}
+
+.cuadro-texto-especial p {
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.cuadro {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.cuadro h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.cuadro {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+.cuadro h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.cuadro img {
+    max-width: 30%;
+    height: auto;
+    margin-top: 15px;
+    border-radius: 5px;
+}

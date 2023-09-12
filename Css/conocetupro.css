@@ -1,0 +1,101 @@
+/* Configura el contenedor principal como una fila flexible, 
+   distribuyendo el espacio entre los elementos y alineándolos en la parte superior. */
+   .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    /* Separación del contenedor de la parte superior */
+}
+
+/* Configura la columna de texto para que ocupe un espacio flexible,
+   agrega relleno y define el modelo de caja como border-box. */
+.text-column {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Aplica estilo al título h2 dentro de la columna de texto, eliminando el margen superior. */
+.text-column h2 {
+    margin-top: 0;
+}
+
+/* Configura el contenedor de iconos como una cuadrícula con dos columnas y espacios entre elementos. */
+.icon-grid {
+    display: block;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    text-align: center;
+    margin-top: 20px;
+    /* Separación entre los iconos y la parte superior */
+}
+
+/* Configura los cuadros de texto para ocupar todo el ancho, 
+   agregar margen inferior y relleno, similar a un contenedor de formulario. */
+.textbox {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    /* Aumenta el relleno para lograr un aspecto más cuadrado */
+    border-radius: 8px;
+    /* Añade bordes redondeados a los cuadros de texto */
+    background-color: #f9f9f9;
+    /* Cambia el color de fondo */
+}
+
+/* Configura las etiquetas de texto para que se muestren como bloques con negrita,
+   y agrega margen inferior para separarlas visualmente de los campos de texto. */
+.textbox label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Configura las áreas de texto para ocupar todo el ancho,
+   agregar relleno, borde y radio, y establece un fondo de color. 
+   También permite desplazamiento vertical si el contenido excede el tamaño del área. */
+.text-area {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    /* Añade bordes redondeados al área de texto */
+    background-color: #f9f9f9;
+    overflow: auto;
+}
+
+/* Estilos para el contenedor */
+.container {
+    border: 1px solid #cccccc;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilos para el título */
+.container h2 {
+    margin-top: 20px;
+    /* Separación del título de la parte superior */
+    font-size: 24px;
+}
+.textbox img {
+    display: inline-block;
+    margin: 0 auto;
+    width: 80px;
+    /* Tamaño del icono */
+    height: 80px;
+    /* Tamaño del icono */
+    object-fit: cover;
+    border-radius: 8px;
+    margin-top: 10px;
+    /* Espaciado superior */
+    transition: transform 0.3s; /* Transición suave para la rotación */
+}
+
+/* Animación de rotación estilo ruleta cuando el cursor pasa por encima */
+.textbox img:hover {
+    transform: rotate(360deg); /* Aplica la rotación cuando el cursor pasa por encima */
+}
+.textbox img + img {
+    margin-left: 20px;
+}

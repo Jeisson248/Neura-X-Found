@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="short icon" href="img/tiburon.png">
+    <link rel="stylesheet" href="./Css/RRecuperarC.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,600&display=swap"
+        rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>recuperar contraseña</title>
+
+</head>
+
+<body>
+
+    <div class="container-form register">
+        <div class="information">
+            <div class="info-childs">
+
+                <h2>Bienvenidos</h2>
+                <p>Para unirte a nuestra comunidad por favor inicia sesion con tus datos</p>
+                <input type="button" value="Bienvenido de nuevo" id="sing-in">
+            </div>
+        </div>
+        <div class="form-information">
+            <div class="form-information-childs">
+                <h2>Recuperar contraseña</h2>
+                <div class="icons">
+                    <i class='bx bxl-google'></i>
+                    <i class='bx bxl-github'></i>
+                    <i class='bx bxl-linkedin'></i>
+
+
+                </div>
+                <p>Usa tu email para recuperar contraseña</p>
+                <form class="form" id="recovery-form" action="https://docs.google.com/forms/d/e/1FAIpQLSegqmJbWOnKSFFzWhrg4s3wxYiT8BC-dWzaH8C3AtlcxvlIrw/viewform" method="GET" onsubmit="return validateForm()">
+                    <label>
+                        <i class='bx bxs-envelope'></i>
+                        <input type="email" id="email" name="entry.1234567890" placeholder="Correo electrónico" required>
+                    </label>
+                    <p id="mensaje"></p>
+                    <input type="submit" value="Enviar">
+                </form>
+                
+                
+            </div>
+        </div>
+    </div>
+    <script src="Login.js"></script>
+    </div>
+</body>
+
+</html>

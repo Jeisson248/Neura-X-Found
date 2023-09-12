@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flecha de Trading y Gráfica en Tiempo Real (Euros)</title>
+    <link rel="stylesheet" href="./Css/Dolar.css">
+    <link rel="short icon" href="./IMG/Tiburon.png">
+    <link rel="stylesheet" href="./Css/styles.css">
+    <link rel="stylesheet" href="./Css/footer.css">
+    <link rel="stylesheet" href="../Css/ruta.css">
+    <link rel="stylesheet" href="../Css/footer.css">
+    <link rel="short icon" href="../IMG/Tiburon.png">
+    <!-- Agrega la referencia a los archivos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Agrega la referencia al archivo de slick -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md bg-primary navbar-dark rounded-top">
+            <a class="navbar-brand" href="../PaginaPrincipal/">
+                <img src="../IMG/Tiburon.png" alt="Mi Logo" class="rounded-circle logo-img">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a href="../PaginaPrincipal/Indexprincipal.html" class="nav-link">Ruta</a></li>
+                    <li class="nav-item"><a href="../PaginaPrincipal/nosotros.html" class="nav-link">Nosotros</a></li>
+                    <li class="nav-item"><a href="../PaginaPrincipal/emprededores.html"
+                            class="nav-link">Emprendedores</a></li>
+                    <li class="nav-item"><a href="../PaginaPrincipal/convocatorias.html"
+                            class="nav-link">Convocatorias</a></li>
+                    <li class="nav-item"><a href="../PaginaPrincipal/PreparateETP.html"
+                            class="nav-link">Transparencia</a></li>
+                    <li class="nav-item"><a href="../quejas o sujerencias/ayuda.html o sujerencias/ayuda.html"
+                            class="nav-link">Contáctenos</a></li>
+                    <li class="nav-item"><a href="../PaginaPrincipal/conoceProyec.html" class="nav-link">plataformas</a>
+                    </li>
+                    <li class="nav-item"><a href="Iniciosesion.html" class="nav-link">Accede</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="flecha">
+            <div class="estadisticas">
+                <div class="valor">
+                    <span id="valorActual">€1000</span>
+                    <span class="etiqueta">Valor Actual</span>
+                </div>
+                <div class="cambio">
+                    <span id="cambioPorcentaje">+2.5%</span>
+                    <span class="etiqueta">Cambio (24h)</span>
+                </div>
+            </div>
+        </div>
+        <div class="grafico-container">
+            <canvas id="miGrafico"></canvas>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./Euros.js"></script>
+</body>
+<footer class="footer">
+    <div class="footer-links">
+        <div class="footer-section">
+            <h4>Acerca de</h4>
+            <a href="../Index.html">Conocenos aqui</a>
+        </div>
+        <div class="footer-section">
+            <h4>Otros sitios</h4>
+            <a href="../PaginaPrincipal/nosotros.html">Developers</a>
+            <a href="../PaginaPrincipal/convocatorias.html">te interesa un curso?</a>
+            <a href="https://www.fondoemprender.com//SitePages/Home.aspx">Fondo emprender SENA</a>
+
+        </div>
+        <div class="footer-section">
+            <h4>Ayuda</h4>
+            <a href="../quejas o sujerencias/ayuda.html">Resolución de problemas</a>
+            <a href="../soportetecnico/indexsoporte.html">Centro de seguridad</a>
+        </div>
+        <div class="footer-section">
+            <h4>Redes sociales</h4>
+            <a href="https://twitter.com/NeuraXXINfinity">Twitter</a>
+                <a href="https://www.facebook.com/profile.php?id=61550875325048">Facebook</a>
+                <a href="https://www.youtube.com/channel/UCyZTx1osuxjh4j0nnXFvABw">YouTube</a>
+                <a href="https://www.instagram.com/neuraxxinfinity/">Instagram</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2023 Neura X found. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+</html>
