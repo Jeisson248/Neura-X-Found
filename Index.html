@@ -1,186 +1,56 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <meta charset='utf-8'>
-    <title>Neura-X-Found</title>
-    <link rel="stylesheet" href="Css/styles.css">
-    <link rel="stylesheet" href="Css/footer.css">
-    <link rel="short icon" href="img/tiburon.png">
-    <!-- Agrega la referencia a los archivos de Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neura-X-Found</title>
+  <link rel="short icon" href="./IMG/Tiburon.png">
+  <link rel="stylesheet" href=./Css/Inicio.css>
+
+  <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <header>
-        <nav class="navbar navbar-expand-md bg-primary navbar-dark rounded-top">
-            <a class="navbar-brand" href="../Proyecto/Index.html">
-                <img src="IMG/Tiburon.png" alt="Mi Logo" class="rounded-circle logo-img">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a href="Index.html" class="nav-link">Ruta</a></li>
-                    <li class="nav-item"><a href="Index.html" class="nav-link">Nosotros</a></li>
-                    <li class="nav-item"><a href="Index.html"
-                            class="nav-link">Emprendedores</a></li>
-                    <li class="nav-item"><a href="Index.html"
-                            class="nav-link">Convocatorias</a></li>
-                    <li class="nav-item"><a href="Index.html"
-                            class="nav-link">Transparencia</a></li>
-                    <li class="nav-item"><a href="Index.html" class="nav-link">Contactenos</a></li>
-                    <li class="nav-item"><a href="Index.html" class="nav-link">Plataformas</a>
-                    </li>
-                    <li class="nav-item"><a href="Iniciosesion.html" class="nav-link">Accede</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+  <header>
+    <a href="#" class="logo">Neura-X-Found</a>
 
-    <!-- Carrusel de imágenes -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="3000" data-pause="hover">
-        <!-- Indicadores -->
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-            <!-- Agrega más indicadores si tienes más imágenes -->
-        </ol>
-
-        <!-- Slides -->
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="IMG/img1.jpg" alt="Imagen 1">
-            </div>
-            <div class="carousel-item">
-                <img src="IMG/img2.jpg" alt="Imagen 2">
-            </div>
-            <div class="carousel-item">
-                <img src="IMG/img3.jpg" alt="Imagen 3">
-            </div>
-            <!-- Agrega más slides si tienes más imágenes -->
-        </div>
-
-        <!-- Controles -->
-        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Anterior</span>
-        </a>
-        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Siguiente</span>
-        </a>
-    </div>
-
-    <!-- Contenido de la página -->
-    <div class="container mt-5">
-        <!-- Sección de bienvenida y cuadro de texto con imagen -->
-        <div class="row">
-            <div class="col-md-6">
-                <div class="welcome-section">
-                    <h1>Bienvenido a Nuestra Pagina</h1>
-                    <p>En este sitio web, te ofrecemos una experiencia unica para que puedas aprovechar al máximo todas
-                        nuestras funciones y contenido. Aquí encontrarás diversas secciones que te permitirán explorar,
-                        aprender y conectar con otras personas interesadas en emprendimiento y proyectos formativos.</p>
-                </div>
-                <div class="text-box">
-                    <h2>Emprende con Nosotros</h2>
-                    <p>¡Hola! Somos una comunidad apasionada por el emprendimiento y el desarrollo de proyectos
-                        innovadores. Aqui podras encontrar recursos, consejos y oportunidades para dar vida a tus ideas
-                        y hacer realidad tus sueños emprendedores. Unete a nosotros y forma parte de esta emocionante
-                        travesia hacia el exito.</p>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="image-container">
-                    <img src="IMG/img4.png" alt="Imagen 4" class="img-fluid">
-                </div>
-            </div>
-        </div>
-
-        <!-- Sección de dos cuadros de texto con imágenes -->
-        <div class="row mt-5">
-            <div class="col-md-6">
-                <div class="text-photo-container">
-                    <div class="text-content">
-                        <h3>El emprendimiento es el camino hacia la realizacion de tus sueños. </h3>
-                        <p>Es la oportunidad de crear algo nuevo, algo que refleja tu pasion y tus talentos. No tengas
-                            miedo de dar el primer paso, porque cada paso que des te acercara mas a tus metas y te abre
-                            puertas que nunca imaginaste. ¡Emprende tus sueños y haz que se conviertan en una realidad!
-                        </p>
-                    </div>
-                    <div class="photo-content">
-                        <img src="IMG/img5.png" alt="Imagen 5" class="img-fluid">
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="text-photo-container">
-                    <div class="text-content">
-                        <h3>Descubre el Poder del Emprendimiento</h3>
-                        <p>En el mundo del emprendimiento, no hay limites para la creatividad y la innovacion. Es el
-                            espacio donde las ideas toman forma y se definen en proyectos con impacto. Si tienes una
-                            idea brillante, es hora de ponerla en accion y compartir tu vision con el mundo. No importa
-                            cuan pequeño o grande sea tu emprendimiento, cada iniciativa cuenta y puede marcar la
-                            diferencia. El futuro te esta esperando, emprende con pasion y determinacion!</p>
-                    </div>
-                    <div class="photo-content">
-                        <img src="IMG/img6.jpeg" alt="Imagen 6" class="img-fluid">
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Espacio en blanco para agregar más contenido -->
-        <div class="row mt-5">
-            <div class="col-md-12">
-                <p>Descubre una experiencia interactiva en nuestra pagina, donde podras explorar secciones informativas,
-                    disfrutar de un carrusel de imagenes inspiradoras y unirte a nuestra comunidad de emprendedores. Lee
-                    nuestro mensaje de bienvenida para conocer nuestra mision y accede a contenido exclusivo al
-                    registrarte en la sección de pie de pagina. ¡Emprende junto a nosotros en esta emocionante travesia
-                    hacia el exito!</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- Pie de página con contenido llamativo -->
-    <footer class="footer">
-        <div class="footer-links">
-            <div class="footer-section">
-                <h4>Acerca de</h4>
-                <a href="Index.html">Conocenos aqui</a>
-            </div>
-            <div class="footer-section">
-                <h4>Otros sitios</h4>
-                <a href="Index.html">Developers</a>
-                <a href="Index.html">te interesa un curso?</a>
-                <a href="Index.html">Fondo emprender SENA</a>
+    <ul class="navlist">
+      <li><a href="Iniciosesion.html">acceder</a></li>
+    </ul>
     
-            </div>
-            <div class="footer-section">
-                <h4>Ayuda</h4>
-                <a href="Index.html">Resolución de problemas</a>
-                <a href="Index.html">Centro de seguridad</a>
-            </div>
-            <div class="footer-section">
-                <h4>Redes sociales</h4>
-                <a href="#">Twitter</a>
-                <a href="#">Facebook</a>
-                <a href="#">YouTube</a>
-                <a href="#">Instagram</a>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>© 2023 Neura-XXI-Nfinity. Todos los derechos reservados.</p>
-        </div>
-    </footer>
+    <div class="bx bx-menu" id="menu-icon"></div>
 
-    <!-- Agrega la referencia al archivo de JavaScript de Bootstrap al final del cuerpo del documento -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</header>
+
+<section class="hero">
+  <div class="hero-text">
+    <h5>#1 Trending</h5>
+    <h4>Neura-XXI-Nfinity</h4>
+    <P>¡Transforma tu visión, crea tu futuro!</P>
+    <h1>Bienvenido</h1>
+    <P>¡¡Aquí es donde tus ideas se convierten en realidad! En Neura X Found, estamos comprometidos en ayudarte a transformar tu visión en un futuro exitoso. ¡Juntos, daremos vida a tus emprendimientos más ambiciosos!</P>
+    <a href="Iniciosesion.html">Comieza aqui</a>
+    <a href="Iniciosesion.html" class="ctaa"><i class="ri-play-fill"></i>Ya tienes cuenta?</a>
+  </div>
+
+  <div class="hero-img">
+    <img src="img/tiburon.png">
+  </div>
+
+</section>
+
+<div class="icons">
+<a href="https://www.instagram.com/neuraxxinfinity/"><i class="ri-instagram-line"></i></a>
+<a href="https://www.youtube.com/channel/UCyZTx1osuxjh4j0nnXFvABw"><i class="ri-youtube-line"></i></a>
+<a href="https://www.facebook.com/profile.php?id=61550875325048"><i class="ri-facebook-line"></i></a>
+<a href="https://twitter.com/NeuraXXINfinity"><i class="ri-twitter-line"></i></a>
+</div>
+
+<script src="https://unpkg.com/scrollreveal"></script>
+  <script src="index.js"></script>
 </body>
 </html>

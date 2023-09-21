@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Css/ruta.css">
+    <link rel="stylesheet" href="../Css/chatayuda.css">
+    <link rel="stylesheet" href="../Css/perfil.css">
     <link rel="stylesheet" href="Css/Estilosr.css">
     <link rel="stylesheet" href="Css/emprendedores.css">
     <link rel="stylesheet" href="../Css/styles.css">
@@ -17,7 +19,7 @@
     <!-- Agrega la referencia al archivo de slick -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
     <!-- Agrega tus estilos CSS personalizados -->
-    
+
     <title>Mi Mundo E-commerce</title>
     <link rel="stylesheet" href="../e-comerce/css/estilos.css">
 </head>
@@ -48,7 +50,25 @@
                     </li>
                     <li class="nav-item"><a href="../PaginaPrincipal/conoceProyec.html" class="nav-link">plataformas</a>
                     </li>
-                    <li class="nav-item"><a href="../Iniciosesion.html" class="nav-link">Accede</a></li>
+                    <div class="profile-container" id="profileContainer">
+                        <!-- Menú desplegable -->
+                        <ul class="dropdown-menu" id="dropdownMenu">
+                            <li id="changeProfile"><i class="fas fa-camera"></i>Cambiar foto de perfil</li>
+                            <li id="viewManual"><i class="fas fa-book"></i>Ver manual de usuario</li>
+                            <li id="logout"><i class="fas fa-sign-out-alt"></i>Cerrar sesión</li>
+                        </ul>
+
+                        <!-- Contenedor de la imagen de perfil -->
+                        <div class="profile-image-container">
+                            <!-- Icono de perfil -->
+                            <div class="profile-icon" id="profileIcon">
+                                <!-- Aquí puedes colocar un ícono de usuario si lo deseas -->
+                            </div>
+
+                            <!-- Imagen de perfil -->
+                            <img id="profileImage" src="../IMG/perfil.gif" alt="Foto de perfil">
+                        </div>
+                    </div>
                 </ul>
             </div>
         </nav>
@@ -58,9 +78,14 @@
         <div class="grid-container">
             <div class="grid-item">
                 <div class="title-container">
-                    <h1 class="animated-title">Mi Mundo E-commerce</h1>
+                    <h1 class="animated-title">
+                        <i class="fas fa-shopping-cart icon-before"></i> Mi Mundo E-commerce
+                        <img src="../IMG/12345.png" class="image-after">
+                    </h1>
                 </div>
             </div>
+
+
             <div class="grid-item">
                 <h2>Conoce como crear un E-commerce</h2>
                 <p>Destaca lo que hace que tu negocio sea único y por qué los visitantes deben elegirte a ti en lugar de
@@ -134,12 +159,10 @@
                         </div>
                         <div class="card__back">
                             <div class="body__card_back">
-                                <h1>Nombre y Dominio del Sitio Web</h1>
-                                <p>Mantente seguro y protegiendo tu idea con un buen dominio y una buena idea dentro de
-                                    tu
-                                    pagina web</p>
+                                <h1>Dominio del Sitio Web</h1>
+                                <p>Mantente seguro y protege tu idea con un buen dominio y contenido web sólido.</p>
                                 <li>un nombre de negocio único y relacionado con tu nicho.</li>
-                                <li>Registra un nombre de dominio y configura el alojamiento web.</li>
+                                <li>Registro de dominio y configuración de alojamiento web..</li>
 
                             </div>
                         </div>
@@ -414,6 +437,7 @@
                             </div>
                         </div>
                     </div>
+                    <script src="../main.js"></script>
                 </div>
 
             </div>
@@ -428,7 +452,7 @@
                         <a href="../PaginaPrincipal/nosotros.html">Developers</a>
                         <a href="../PaginaPrincipal/convocatorias.html">te interesa un curso?</a>
                         <a href="https://www.fondoemprender.com//SitePages/Home.aspx">Fondo emprender SENA</a>
-        
+
                     </div>
                     <div class="footer-section">
                         <h4>Ayuda</h4>
@@ -444,10 +468,59 @@
                     </div>
                 </div>
                 <div class="footer-bottom">
-                    <p>© 2023  Neura-XXI-Nfinity. Todos los derechos reservados.</p>
+                    <p>© 2023 Neura-XXI-Nfinity. Todos los derechos reservados.</p>
                 </div>
             </footer>
         </main>
-        
+        <!-- Icono de activación del chat -->
+        <!-- Contenedor de la imagen de activación del chat -->
+        <div class="chat-icon" id="chatIcon">
+            <img src="../IMG/robot (3).gif" alt="Imagen del chat">
+        </div>
+
+
+        <!-- Contenedor del chat oculto -->
+        <div class="chat-container" id="chatContainer">
+            <div class="chat-header">
+                <div class="profile-icon">
+                    <a>Neura</a>
+                </div>
+            </div>
+            <div class="chat-content">
+                <div class="chatlog" id="chatlog">
+                    <!-- Mensaje de ejemplo con imagen -->
+                    <div class="message">
+                        <img src="../IMG/robot (3).gif" alt="Imagen de respuesta">
+                        <p>Hola, Soy Neura-X. Te enseño un menu donde me puedes preguntar lo que quieras.</p>
+                    </div>
+                    <!-- Agrega más mensajes como este según sea necesario -->
+                </div>
+
+                <!-- Nuevo menú de preguntas -->
+                <div class="menu" id="menu">
+                    <h3>Preguntas que puedo hacer</h3>
+                    <ul>
+                        <li>- dónde puedo encontrar los cursos</li>
+                        <li>- quiero un curso Gratuito</li>
+                        <li>- como puedo hablar con EPSA</li>
+                        <li>- cómo puedo Mandar una queja</li>
+                        <li>- tienen redes sociales</li>
+                        <li>- como puedes moverte por la pagina</li>
+                        <li>- como va el trading</li>
+                        <li>- no encuentro las convocatorias</li>
+                        <!-- Agrega más preguntas según sea necesario -->
+                    </ul>
+                </div>
+
+                <div class="user-input">
+                    <input type="text" id="userInput" placeholder="Escribe tu mensaje aquí">
+                    <button id="sendButton">Enviar</button>
+                </div>
+            </div>
+        </div>
+
+        <script src="../Neura-X/main.js"></script>
+        <script src="../Neura-X/Chat.js"></script>
     </body>
+
 </html>

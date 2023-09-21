@@ -1,0 +1,343 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f6f8fa;
+    /* Color de fondo similar al de GitHub */
+}
+
+header {
+    padding: 20px;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+.logo-img {
+    width: 50px;
+    /* Ajusta el tamaño del logo según tus preferencias */
+    height: 50px;
+    border-radius: 50%;
+    /* Esto hace que la imagen se muestre como un círculo */
+}
+
+.navbar {
+    background-color: #00affa;
+    /* Cambia el color de fondo a un tono azul */
+    border-radius: 20px;
+    /* Agrega bordes redondeados */
+    margin-top: 10px;
+    /* Ajusta el espacio superior de la barra de navegación */
+    margin-bottom: 20px;
+    /* Ajusta el margen inferior para separar del contenido */
+}
+
+.navbar-brand {
+    font-size: 24px;
+}
+
+.navbar-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    text-align: center;
+}
+
+.nav-link {
+    display: block;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 10px;
+    /* Bordes redondeados */
+}
+
+/* Estilos para el carrusel */
+.carousel {
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 30px;
+    /* Puedes ajustar este margen para separarlo de los bordes */
+}
+
+.carousel img {
+    border-radius: 10px;
+    width: 100%;
+    height: 300px;
+    /* Puedes ajustar la altura de las imágenes */
+    object-fit: cover;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    width: 25px;
+    height: 25px;
+}
+
+/* Estilos para el contenido de bienvenida */
+.main-content {
+    margin: 30px;
+}
+
+.welcome-section {
+    text-align: center;
+    padding: 50px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-section h1 {
+    font-size: 36px;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+.welcome-section p {
+    font-size: 18px;
+    color: #666666;
+    line-height: 1.6;
+}
+
+/* Estilos para el formulario */
+.form-section {
+    text-align: center;
+    margin-top: 30px;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-section h2 {
+    font-size: 28px;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+.form-container {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 16px;
+    color: #333333;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background-color: #00affa;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilos para el pie de página */
+.footer {
+    background-color: #333333;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+    color: #ffffff;
+}
+
+.footer h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.footer p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.footer button.btn {
+    background-color: #00affa;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.image-container{
+    max-width: 100%; /* Ancho máximo del 100% del contenedor */
+    height: auto; /* Altura automática para mantener la proporción */
+}
+.img-fluid {
+    width: 80%; /* Ancho del 80% del contenedor */
+    height: auto; /* Altura automática para mantener la proporción */
+}
+.img-fluid {
+    width: 90%; /* Ancho del 90% del contenedor */
+    height: auto; /* Altura automática para mantener la proporción */
+}
+/* Estilo para el icono de foto de perfil en el navbar */
+.profile-img {
+    width: 30px; /* Ajusta el ancho de la imagen */
+    height: 30px; /* Ajusta la altura de la imagen */
+    object-fit: cover; /* Ajusta la forma en que la imagen se adapta */
+    margin-left: 10px; /* Espacio entre el ícono y el texto */
+}
+/* Estilo para el contenedor principal */
+.profile-container {
+    display: flex;
+    align-items: center; /* Centra verticalmente los elementos */
+    gap: 10px; /* Espacio entre elementos */
+    cursor: pointer;
+}
+
+/* Estilo para el menú desplegable */
+.dropdown-menu {
+    position: absolute;
+    top: 40px; /* Espacio entre el icono de perfil y el menú */
+    right: 0;
+    background-color: #fff; /* Color de fondo del menú */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 100; /* Asegura que el menú esté en la parte superior */
+    display: none; /* Inicialmente, el menú está oculto */
+    opacity: 0;
+    transform: translateY(-10px); /* Mueve el menú hacia arriba para ocultarlo */
+    transition: opacity 0.3s, transform 0.3s; /* Agrega una animación de transición */
+}
+
+/* Mostrar el menú cuando el contenedor se está centrando */
+.profile-container:hover .dropdown-menu {
+    display: block;
+    opacity: 1; /* Hace que el menú sea visible */
+    transform: translateY(0); /* Muestra el menú con una animación hacia abajo */
+}
+
+/* Estilo para los elementos del menú */
+.dropdown-menu li {
+    padding: 10px;
+    text-align: right;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transición de color de fondo al pasar el cursor */
+}
+
+/* Cambiar el color de fondo al pasar el cursor */
+.dropdown-menu li:hover {
+    background-color: #f0f0f0;
+}
+
+/* Estilo para los íconos dentro del menú */
+.dropdown-menu li i {
+    margin-right: 10px;
+    color: #007BFF; /* Color de los íconos del menú */
+}
+
+/* Estilo para el contenedor de la imagen de perfil */
+.profile-image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Alinea la imagen a la derecha */
+}
+
+/* Estilo para la imagen de perfil por defecto */
+#profileImage {
+    width: 40px; /* Ajusta el ancho de la imagen */
+    height: 40px; /* Ajusta la altura de la imagen */
+    object-fit: cover; /* Ajusta la forma en que la imagen se adapta al contenedor */
+    border-radius: 50%; /* Da forma circular a la imagen */
+    background-color: #ccc; /* Color de fondo de la imagen si no se carga ninguna imagen */
+}
+
+
+
+/* Estilo para el contenedor principal */
+.profile-container {
+    display: flex;
+    align-items: center; /* Centra verticalmente los elementos */
+    gap: 10px; /* Espacio entre elementos */
+    cursor: pointer;
+}
+
+/* Estilo para el menú desplegable */
+.dropdown-menu {
+    position: absolute;
+    top: 40px; /* Espacio entre el icono de perfil y el menú */
+    right: 0;
+    background-color: #fff; /* Color de fondo del menú */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 100; /* Asegura que el menú esté en la parte superior */
+    display: none; /* Inicialmente, el menú está oculto */
+    opacity: 0;
+    transform: translateY(-10px); /* Mueve el menú hacia arriba para ocultarlo */
+    transition: opacity 0.3s, transform 0.3s; /* Agrega una animación de transición */
+}
+
+/* Mostrar el menú cuando el contenedor se está centrando */
+.profile-container:hover .dropdown-menu {
+    display: block;
+    opacity: 1; /* Hace que el menú sea visible */
+    transform: translateY(0); /* Muestra el menú con una animación hacia abajo */
+}
+
+/* Estilo para los elementos del menú */
+.dropdown-menu li {
+    padding: 10px;
+    text-align: right;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transición de color de fondo al pasar el cursor */
+}
+
+/* Cambiar el color de fondo al pasar el cursor */
+.dropdown-menu li:hover {
+    background-color: #f0f0f0;
+}
+
+/* Estilo para los íconos dentro del menú */
+.dropdown-menu li i {
+    margin-right: 10px;
+    color: #007BFF; /* Color de los íconos del menú */
+}
+
+/* Estilo para el contenedor de la imagen de perfil */
+.profile-image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Alinea la imagen a la derecha */
+}
+
+/* Estilo para la imagen de perfil por defecto */
+#profileImage {
+    width: 40px; /* Ajusta el ancho de la imagen */
+    height: 40px; /* Ajusta la altura de la imagen */
+    object-fit: cover; /* Ajusta la forma en que la imagen se adapta al contenedor */
+    border-radius: 50%; /* Da forma circular a la imagen */
+    background-color: #ccc; /* Color de fondo de la imagen si no se carga ninguna imagen */
+}

@@ -192,3 +192,18 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
 }
+
+.icon-before,
+.icon-after {
+    font-size: 16px;
+    /* Ajusta el tamaño del icono aquí */
+    margin-right: 5px;
+    /* Espacio entre el icono y el texto */
+}
+
+.image-after {
+    max-width: 220px;
+    /* Ajusta el ancho máximo de la imagen aquí */
+    vertical-align: middle;
+    /* Alinea la imagen verticalmente con el texto */
+}

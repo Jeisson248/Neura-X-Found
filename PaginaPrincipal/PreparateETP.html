@@ -5,6 +5,8 @@
     <meta charset='utf-8'>
     <title>Neura-X-Found</title>
     <link rel="stylesheet" href="../Css/ruta.css">
+    <link rel="stylesheet" href="../Css/chatayuda.css">
+    <link rel="stylesheet" href="../Css/perfil.css">
     <link rel="stylesheet" href="./Css/styles.css">
     <link rel="stylesheet" href="../Css/footer.css">
     <link rel="short icon" href="../IMG/Tiburon.png">
@@ -40,7 +42,25 @@
                     </li>
                     <li class="nav-item"><a href="../PaginaPrincipal/conoceProyec.html" class="nav-link">plataformas</a>
                     </li>
-                    <li class="nav-item"><a href="../Iniciosesion.html" class="nav-link">Accede</a></li>
+                    <div class="profile-container" id="profileContainer">
+                        <!-- Menú desplegable -->
+                        <ul class="dropdown-menu" id="dropdownMenu">
+                            <li id="changeProfile"><i class="fas fa-camera"></i>Cambiar foto de perfil</li>
+                            <li id="viewManual"><i class="fas fa-book"></i>Ver manual de usuario</li>
+                            <li id="logout"><i class="fas fa-sign-out-alt"></i>Cerrar sesión</li>
+                        </ul>
+
+                        <!-- Contenedor de la imagen de perfil -->
+                        <div class="profile-image-container">
+                            <!-- Icono de perfil -->
+                            <div class="profile-icon" id="profileIcon">
+                                <!-- Aquí puedes colocar un ícono de usuario si lo deseas -->
+                            </div>
+
+                            <!-- Imagen de perfil -->
+                            <img id="profileImage" src="../IMG/perfil.gif" alt="Foto de perfil">
+                        </div>
+                    </div>
                 </ul>
             </div>
         </nav>
@@ -93,39 +113,30 @@
         <div class="cuadro">
             <img src="../IMG/codigo-html.png" alt="Producto 2">
             <h3> Desarrollo de Frontend.</h3>
-            <p>"Sumérgete en el emocionante mundo del Desarrollo Frontend y adquiere las habilidades necesarias para
-                crear interfaces web dinámicas y atractivas. Este curso te llevará a través de los fundamentos y
-                conceptos esenciales de HTML, CSS y JavaScript, dotándote de la capacidad de transformar diseños en
-                experiencias interactivos.</p>
+            <p>"Explora el emocionante Desarrollo Frontend, aprende HTML, CSS y JavaScript para crear interfaces web
+                dinámicas y atractivas."</p>
             <a href="https://www.pse.com.co/persona/">
-                <button class="boton-compra">Comprar  $1 USD</button>
+                <button class="boton-compra">Comprar $1 USD</button>
             </a>
         </div>
         <div class="cuadro">
             <img src="../IMG/curso2.png" alt="Producto 2">
             <h3>Dale estilo a tus ideas</h3>
             <p>
-                "Sumérgete en el mundo y vibrante creativo del diseño web con CSS y dale vida a tus proyectos digitales.
-                En este curso, explorarás la magia de las hojas de estilo en cascada (CSS) que te permitirá dotar a tus
-                páginas web con colores, formas y efectos que Harán que destaquen.
-
-                Desde los fundamentos básicos hasta técnicas avanzadas, aprenderás a manipular los elementos visuales de
-                tu sitio web, creando diseños atractivos y amigables para los usuarios. A medida que avanza, te
-                adentrarás en el mundo del diseño responsivo, asegurando que tus creaciones luzcan y funcionen de manera
-                óptima en dispositivos de diferentes tamaños.</p>
+                "Sumérgete en el mundo creativo del diseño web con CSS y da vida a tus proyectos digitales. Aprende a
+                utilizar hojas de estilo en cascada (CSS) para crear páginas web atractivas y amigables para los
+                usuarios, desde los fundamentos hasta técnicas avanzadas, incluyendo el diseño responsivo."</p>
             <a href="https://www.pse.com.co/persona/">
-                <button class="boton-compra">Comprar  $1 USD</button>
+                <button class="boton-compra">Comprar $1 USD</button>
             </a>
         </div>
         <div class="cuadro">
             <img src="../IMG/CerebroIA.png" alt="Producto 2">
             <h3>Manejo de inteligencia artificial</h3>
-            <p>Desde los conceptos básicos hasta los niveles más sofisticados, desvelarás el poder transformador de la
-                inteligencia artificial y cómo se entrelaza con nuestra vida cotidiana. A medida que profundices,
-                descubrirás cómo las máquinas pueden aprender, razonar y tomar decisiones a partir de datos, impulsando
-                la automatización y la eficiencia en diversos campos.</p>
+            <p>"Descubre el poder de la inteligencia artificial, desde conceptos básicos hasta niveles avanzados, y cómo
+                impacta en la vida diaria, impulsando la automatización y la eficiencia en diferentes áreas."</p>
             <a href="https://www.pse.com.co/persona/">
-                <button class="boton-compra">Comprar  $1 USD</button>
+                <button class="boton-compra">Comprar $1 USD</button>
             </a>
         </div>
         <div class="cuadro">
@@ -136,7 +147,7 @@
                 sólidos sobre las distintas IA, cómo se clasifican y cómo están dando forma al futuro en innumerables
                 campos."</p>
             <a href="https://www.pse.com.co/persona/">
-                <button class="boton-compra">Comprar  $1 USD</button>
+                <button class="boton-compra">Comprar $1 USD</button>
             </a>
         </div>
         <div class="cuadro">
@@ -151,7 +162,7 @@
                 desarrollarte personalmente en un mundo cada vez más interconectado. Únete a nosotros y desbloquea tu
                 potencial para convertirte en un comunicador influyente y empático en todas las facetas de la vida."</p>
             <a href="https://www.pse.com.co/persona/">
-                <button class="boton-compra">Comprar  $1 USD</button>
+                <button class="boton-compra">Comprar $1 USD</button>
             </a>
         </div>
         <div class="cuadro">
@@ -168,13 +179,14 @@
                 vertebral de la era digital y este curso te preparará para dominar su uso y aplicación en el mundo
                 real."</p>
             <a href="https://www.pse.com.co/persona/">
-                <button class="boton-compra">Comprar  $1 USD</button>
+                <button class="boton-compra">Comprar $1 USD</button>
             </a>
         </div>
         <div class="cuadro">
-            <h3>Tambien contamos con formacion gratuita no te preocupes</h3>
-            <p>Veamos si te puede gustar algo de lo que veas por aqui</p>
-            <img src="../IMG/hola.gif">
+            <img src="../IMG/de-primera-calidad.gif" alt="Producto 2">
+            <h3>lo mejor de lo mejor</h3>
+            <p>Conoce nuestra experiencia premiun, nuestras convocatoriasestan disponubles y abiertas para ti </p>
+            <a class="boton-compra" href="../LineaTiempo.html">Aprende a emprender</a>
         </div>
         <div class="cuadro">
             <img src="../IMG/bitcoin111.gif" alt="Producto 2">
@@ -216,7 +228,57 @@
                 lo haces </p>
             <a class="boton-compra" href="../PaginaPrincipal/aprendeaE.html">Aprende a emprender</a>
         </div>
+        <script src="../main.js"></script>
     </div>
+    <!-- Icono de activación del chat -->
+    <!-- Contenedor de la imagen de activación del chat -->
+    <div class="chat-icon" id="chatIcon">
+        <img src="../IMG/robot (3).gif" alt="Imagen del chat">
+    </div>
+
+
+    <!-- Contenedor del chat oculto -->
+    <div class="chat-container" id="chatContainer">
+        <div class="chat-header">
+            <div class="profile-icon">
+                <a>Neura</a>
+            </div>
+        </div>
+        <div class="chat-content">
+            <div class="chatlog" id="chatlog">
+                <!-- Mensaje de ejemplo con imagen -->
+                <div class="message">
+                    <img src="../IMG/robot (3).gif" alt="Imagen de respuesta">
+                    <p>Hola, Soy Neura-X. Te enseño un menu donde me puedes preguntar lo que quieras.</p>
+                </div>
+                <!-- Agrega más mensajes como este según sea necesario -->
+            </div>
+
+            <!-- Nuevo menú de preguntas -->
+            <div class="menu" id="menu">
+                <h3>Preguntas que puedo hacer</h3>
+                <ul>
+                    <li>- dónde puedo encontrar los cursos</li>
+                    <li>- quiero un curso Gratuito</li>
+                    <li>- como puedo hablar con EPSA</li>
+                    <li>- cómo puedo Mandar una queja</li>
+                    <li>- tienen redes sociales</li>
+                    <li>- como puedes moverte por la pagina</li>
+                    <li>- como va el trading</li>
+                    <li>- no encuentro las convocatorias</li>
+                    <!-- Agrega más preguntas según sea necesario -->
+                </ul>
+            </div>
+
+            <div class="user-input">
+                <input type="text" id="userInput" placeholder="Escribe tu mensaje aquí">
+                <button id="sendButton">Enviar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../Neura-X/main.js"></script>
+    <script src="../Neura-X/Chat.js"></script>
     <footer class="footer">
         <div class="footer-links">
             <div class="footer-section">

@@ -1,0 +1,93 @@
+/* Estilo para el contenedor principal */
+.container {
+    display: grid;
+    place-items: center;
+    height: 500vh;
+    background-color: #f0f0f0;
+}
+
+/* Estilo para el cuadro de texto */
+.text-box {
+    padding: 20px;
+    font-size: 24px;
+    border: 2px solid #007BFF;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #fff;
+    width: 80%;
+    max-width: 600px;
+    animation: fadeIn 1s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Hover: Escala el cuadro de texto */
+.text-box:hover {
+    transform: scale(1.05);
+}
+
+/* Estilo para el contenedor Grid */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 20px; /* Espacio entre el cuadro de texto y los cuadros Grid */
+}
+
+/* Estilo para cada cuadro Grid */
+.grid-item {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+/* Estilo para las imágenes dentro de los cuadros Grid */
+.grid-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Estilo para el texto dentro de los cuadros Grid */
+.grid-item p {
+    font-size: 16px;
+}
+
+/* Animación de escala al pasar el cursor sobre los cuadros Grid */
+.grid-item:hover {
+    transform: scale(1.05);
+}
+
+/* Estilo para el botón de regreso */
+.return-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.return-button:hover {
+    background-color: #0056b3;
+}

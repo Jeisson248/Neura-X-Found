@@ -6,12 +6,39 @@ body {
 }
 
 /* Estilos de la barra de navegación */
-.navbar {
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px;
+.logo-img {
+    width: 50px; /* Ajusta el tamaño del logo según tus preferencias */
+    height: 50px;
+    border-radius: 50%; /* Esto hace que la imagen se muestre como un círculo */
 }
 
+.navbar {
+    background-color: #00affa; /* Cambia el color de fondo a un tono azul */
+    border-radius: 20px; /* Agrega bordes redondeados */
+    margin: 10px 0 20px; /* Ajusta el espacio superior e inferior de la barra de navegación */
+}
+
+.navbar-brand {
+    font-size: 24px;
+}
+
+.navbar-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    text-align: center;
+}
+
+.nav-link {
+    display: block;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 10px; /* Bordes redondeados */
+}
 .chatbot-container {
     flex: 1;
     max-width: 600px;
@@ -133,16 +160,6 @@ body {
     /* Agrega margen izquierdo */
     margin-right: 20px;
     /* Agrega margen derecho */
-}
-
-/* Estilos para el footer */
-.footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #ffffff;
-    margin-top: 30px;
-    color: #fff;
-    border-radius: 10px;
 }
 
 /* Estilos para los cuadros de texto */

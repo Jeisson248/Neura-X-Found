@@ -4,21 +4,20 @@
 <head>
     <meta charset='utf-8'>
     <title>Chatbot de Emprendimiento</title>
-    <link rel="stylesheet" type="text/css" href="../Css/Chatbot.css">
+    <link rel="stylesheet" href="../Css/Chatbot.css">
     <link rel="stylesheet" href="../Css/footer.css">
-    <link rel="stylesheet" href="./Css/styles.css">
+    <link rel="stylesheet" href="../Css/perfil.css">
     <link rel="stylesheet" href="../Css/ruta.css">
-    <link rel="stylesheet" href="../Css/Formulario.css">
     <link rel="short icon" href="../IMG/Tiburon.png">
     <!-- Agrega la referencia a los archivos de Bootstrap -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- Agrega la referencia al archivo de slick -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+
 </head>
 <header>
     <nav class="navbar navbar-expand-md bg-primary navbar-dark rounded-top">
-        <a class="navbar-brand" href="../../Proyecto/Index.html">
+        <a class="navbar-brand" href="../PaginaPrincipal/">
             <img src="../IMG/Tiburon.png" alt="Mi Logo" class="rounded-circle logo-img">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -27,19 +26,40 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a href="/PaginaPrincipal/Indexprincipal.html" class="nav-link">Ruta</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Nosotros</a></li>
+                <li class="nav-item"><a href="../PaginaPrincipal/Indexprincipal.html" class="nav-link">Ruta</a></li>
+                <li class="nav-item"><a href="../PaginaPrincipal/nosotros.html" class="nav-link">Nosotros</a></li>
                 <li class="nav-item"><a href="../PaginaPrincipal/emprededores.html" class="nav-link">Emprendedores</a>
                 </li>
                 <li class="nav-item"><a href="../PaginaPrincipal/convocatorias.html" class="nav-link">Convocatorias</a>
                 </li>
-                <li class="nav-item"><a href="#" class="nav-link">Transparencia</a></li>
-                <li class="nav-item"><a href="../quejas o sujerencias/ayuda.html" class="nav-link">Contáctenos</a></li>
+                <li class="nav-item"><a href="../PaginaPrincipal/PreparateETP.html" class="nav-link">Transparencia</a>
+                </li>
+                <li class="nav-item"><a href="../quejas o sujerencias/ayuda.html o sujerencias/ayuda.html"
+                        class="nav-link">Contáctenos</a></li>
                 <li class="nav-item"><a href="../PaginaPrincipal/conoceProyec.html" class="nav-link">plataformas</a>
                 </li>
-                <li class="nav-item"><a href="../Iniciosesion.html" class="nav-link">Accede</a></li>
             </ul>
+            <div class="profile-container" id="profileContainer">
+                <!-- Menú desplegable -->
+                <ul class="dropdown-menu" id="dropdownMenu">
+                    <li id="changeProfile"><i class="fas fa-camera"></i>Cambiar foto de perfil</li>
+                    <li id="viewManual"><i class="fas fa-book"></i>Ver manual de usuario</li>
+                    <li id="logout"><i class="fas fa-sign-out-alt"></i>Cerrar sesión</li>
+                </ul>
+
+                <!-- Contenedor de la imagen de perfil -->
+                <div class="profile-image-container">
+                    <!-- Icono de perfil -->
+                    <div class="profile-icon" id="profileIcon">
+                        <!-- Aquí puedes colocar un ícono de usuario si lo deseas -->
+                    </div>
+
+                    <!-- Imagen de perfil -->
+                    <img id="profileImage" src="../IMG/perfil.gif" alt="Foto de perfil">
+                </div>
+            </div>
         </div>
+
     </nav>
 </header>
 
@@ -133,40 +153,41 @@
         </div>
         <p>Mircrosof te brinda herramientas de desarrollo de IA para tu emprendimiento¡</p>
         <a href="https://www.microsoft.com/es-co">Descubre mas aqui</a>
-    </div> 
-</div>
-</div>
-
-<footer class="footer">
-    <div class="footer-links">
-        <div class="footer-section">
-            <h4>Acerca de</h4>
-            <a href="../Index.html">Conocenos aqui</a>
-        </div>
-        <div class="footer-section">
-            <h4>Otros sitios</h4>
-            <a href="../PaginaPrincipal/nosotros.html">Developers</a>
-            <a href="../PaginaPrincipal/convocatorias.html">te interesa un curso?</a>
-            <a href="https://www.fondoemprender.com//SitePages/Home.aspx">Fondo emprender SENA</a>
-
-        </div>
-        <div class="footer-section">
-            <h4>Ayuda</h4>
-            <a href="../quejas o sujerencias/ayuda.html">Resolución de problemas</a>
-            <a href="../soportetecnico/indexsoporte.html">Centro de seguridad</a>
-        </div>
-        <div class="footer-section">
-            <h4>Redes sociales</h4>
-            <a href="https://twitter.com/NeuraXXINfinity">Twitter</a>
-                <a href="https://www.facebook.com/profile.php?id=61550875325048">Facebook</a>
-                <a href="https://www.youtube.com/channel/UCyZTx1osuxjh4j0nnXFvABw">YouTube</a>
-                <a href="https://www.instagram.com/neuraxxinfinity/">Instagram</a>
-        </div>
     </div>
-    <div class="footer-bottom">
-        <p>© 2023    Neura-XXI-Nfinity. Todos los derechos reservados.</p>
+</div>
+<script src="../main.js"></script>
+
+<div class="footer-links">
+    <div class="footer-section">
+        <h4>Acerca de</h4>
+        <a href="../Index.html">Conocenos aqui</a>
     </div>
+    <div class="footer-section">
+        <h4>Otros sitios</h4>
+        <a href="../PaginaPrincipal/nosotros.html">Developers</a>
+        <a href="../PaginaPrincipal/convocatorias.html">te interesa un curso?</a>
+        <a href="https://www.fondoemprender.com//SitePages/Home.aspx">Fondo emprender SENA</a>
+
+    </div>
+    <div class="footer-section">
+        <h4>Ayuda</h4>
+        <a href="../quejas o sujerencias/ayuda.html">Resolución de problemas</a>
+        <a href="../soportetecnico/indexsoporte.html">Centro de seguridad</a>
+    </div>
+    <div class="footer-section">
+        <h4>Redes sociales</h4>
+        <a href="https://twitter.com/NeuraXXINfinity">Twitter</a>
+        <a href="https://www.facebook.com/profile.php?id=61550875325048">Facebook</a>
+        <a href="https://www.youtube.com/channel/UCyZTx1osuxjh4j0nnXFvABw">YouTube</a>
+        <a href="https://www.instagram.com/neuraxxinfinity/">Instagram</a>
+    </div>
+</div>
+<div class="footer-bottom">
+    <p>© 2023 Neura-XXI-Nfinity. Todos los derechos reservados.</p>
+</div>
 </footer>
+
+</div>
 </body>
 
 </html>

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title>Neura-X-Found</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Css/ruta.css">
+    <link rel="stylesheet" href="Css/perfil.css">
     <link rel="stylesheet" href="Css/footer.css">
     <link rel="short icon" href="IMG/Tiburon.png">
     <link rel="stylesheet" href="Css/TRM.css">
@@ -23,8 +23,8 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-md bg-primary navbar-dark rounded-top">
-            <a class="navbar-brand" href="/Index.html">
-                <img src="IMG/Tiburon.png" alt="Mi Logo" class="rounded-circle logo-img">
+            <a class="navbar-brand" href="../PaginaPrincipal/">
+                <img src="../IMG/Tiburon.png" alt="Mi Logo" class="rounded-circle logo-img">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,20 +36,37 @@
                     <li class="nav-item"><a href="../PaginaPrincipal/nosotros.html" class="nav-link">Nosotros</a></li>
                     <li class="nav-item"><a href="../PaginaPrincipal/emprededores.html"
                             class="nav-link">Emprendedores</a></li>
-                    <li class="nav-item"><a href="./PaginaPrincipal/convocatorias.html"
+                    <li class="nav-item"><a href="../PaginaPrincipal/convocatorias.html"
                             class="nav-link">Convocatorias</a></li>
                     <li class="nav-item"><a href="../PaginaPrincipal/PreparateETP.html"
                             class="nav-link">Transparencia</a></li>
-                    <li class="nav-item"><a href="../quejas o sujerencias/ayuda.html" class="nav-link">Contáctenos</a>
+                    <li class="nav-item"><a href="../quejas o sujerencias/ayuda.html o sujerencias/ayuda.html"
+                            class="nav-link">Contáctenos</a></li>
+                    <li class="nav-item"><a href="../PaginaPrincipal/conoceProyec.html" class="nav-link">plataformas</a>
                     </li>
-                    <li class="nav-item"><a href="../PaginaPrincipal/conoceProyec.html" class="nav-link">Plataformas</a>
-                    </li>
-                    <li class="nav-item"><a href="../Iniciosesion.html" class="nav-link">Accede</a></li>
+                    <div class="profile-container" id="profileContainer">
+                        <!-- Menú desplegable -->
+                        <ul class="dropdown-menu" id="dropdownMenu">
+                            <li id="changeProfile"><i class="fas fa-camera"></i>Cambiar foto de perfil</li>
+                            <li id="viewManual"><i class="fas fa-book"></i>Ver manual de usuario</li>
+                            <li id="logout"><i class="fas fa-sign-out-alt"></i>Cerrar sesión</li>
+                        </ul>
+
+                        <!-- Contenedor de la imagen de perfil -->
+                        <div class="profile-image-container">
+                            <!-- Icono de perfil -->
+                            <div class="profile-icon" id="profileIcon">
+                                <!-- Aquí puedes colocar un ícono de usuario si lo deseas -->
+                            </div>
+
+                            <!-- Imagen de perfil -->
+                            <img id="profileImage" src="../IMG/perfil.gif" alt="Foto de perfil">
+                        </div>
+                    </div>
                 </ul>
             </div>
         </nav>
     </header>
-
     <main>
         <h2>TÉRMINOS Y CONDICIONES PARA LA PARTICIPACIÓN DE PROGRAMADORES EN NEURA XXI INFINITY</h2>
 
@@ -157,35 +174,5 @@
 
         <p>Fecha de entrada en vigencia: [01/04/2023]</p>
     </main>
-    <footer class="footer">
-        <div class="footer-links">
-            <div class="footer-section">
-                <h4>Acerca de</h4>
-                <a href="../Index.html">Conocenos aqui</a>
-            </div>
-            <div class="footer-section">
-                <h4>Otros sitios</h4>
-                <a href="../PaginaPrincipal/nosotros.html">Developers</a>
-                <a href="../PaginaPrincipal/convocatorias.html">te interesa un curso?</a>
-                <a href="https://www.fondoemprender.com//SitePages/Home.aspx">Fondo emprender SENA</a>
-
-            </div>
-            <div class="footer-section">
-                <h4>Ayuda</h4>
-                <a href="../quejas o sujerencias/ayuda.html">Resolución de problemas</a>
-                <a href="../soportetecnico/indexsoporte.html">Centro de seguridad</a>
-            </div>
-            <div class="footer-section">
-                <h4>Redes sociales</h4>
-                <a href="https://twitter.com/NeuraXXINfinity">Twitter</a>
-                <a href="https://www.facebook.com/profile.php?id=61550875325048">Facebook</a>
-                <a href="https://www.youtube.com/channel/UCyZTx1osuxjh4j0nnXFvABw">YouTube</a>
-                <a href="https://www.instagram.com/neuraxxinfinity/">Instagram</a>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>© 2023 Neura X found. Todos los derechos reservados.</p>
-        </div>
-    </footer>
-
+</body>
 </html>

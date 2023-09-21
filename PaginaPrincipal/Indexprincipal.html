@@ -5,6 +5,8 @@
     <meta charset='utf-8'>
     <title>Neura-X-Found</title>
     <link rel="stylesheet" href="../Css/ruta.css">
+    <link rel="stylesheet" href="../Css/chatayuda.css">
+    <link rel="stylesheet" href="../Css/perfil.css">
     <link rel="stylesheet" href="../Css/Estilosr.css">
     <link rel="stylesheet" href="../Css/styles.css">
     <link rel="stylesheet" href="../Css/footer.css">
@@ -42,8 +44,26 @@
                     </li>
                     <li class="nav-item"><a href="../PaginaPrincipal/conoceProyec.html" class="nav-link">plataformas</a>
                     </li>
-                    <li class="nav-item"><a href="../Iniciosesion.html" class="nav-link">Salir</a></li>
-                    
+                    <div class="profile-container" id="profileContainer">
+                        <!-- Menú desplegable -->
+                        <ul class="dropdown-menu" id="dropdownMenu">
+                            <li id="changeProfile"><i class="fas fa-camera"></i>Cambiar foto de perfil</li>
+                            <li id="viewManual"><i class="fas fa-book"></i>Ver manual de usuario</li>
+                            <li id="logout"><i class="fas fa-sign-out-alt"></i>Cerrar sesión</li>
+                        </ul>
+
+                        <!-- Contenedor de la imagen de perfil -->
+                        <div class="profile-image-container">
+                            <!-- Icono de perfil -->
+                            <div class="profile-icon" id="profileIcon">
+                                <!-- Aquí puedes colocar un ícono de usuario si lo deseas -->
+                            </div>
+
+                            <!-- Imagen de perfil -->
+                            <img id="profileImage" src="../IMG/perfil.gif" alt="Foto de perfil">
+                        </div>
+                    </div>
+
                 </ul>
             </div>
         </nav>
@@ -52,10 +72,8 @@
         <div class="grid-item">
             <div class="text">
                 <h2>Proyeccion de un proyecto</h2>
-                <p>En el dinamico mundo actual, la proyeccion de un proyecto desempeña un papel esencial en la
-                    planificacion estrategica y el exito empresarial. Una proyeccion precisa y detallada nos proporciona
-                    un mapa detallado de como un proyecto se desarrollaria en el futuro y como influira en el entorno
-                    empresarial.</p>
+                <p>En el mundo empresarial actual, proyectar un proyecto es clave para la planificación estratégica y el
+                    éxito. Proporciona un mapa del futuro y su impacto en el entorno empresarial.</p>
             </div>
             <div class="included-text">
                 <p>Analisis de Mercado: Comprender las tendencias actuales del mercado y las preferencias de los
@@ -67,17 +85,13 @@
             <div class="text">
                 <h2>Idea base</h2>
                 <div class="included-text">
-                    <p>Toda creacion, ya sea un proyecto empresarial, artistico o cientifico, comienza con una Idea
-                        Base, un punto de partida que da forma y direccion a la vision que se quiere lograr. Al igual
-                        que los cimientos solidos de un edificio, la Idea Base es el fundamento sobre el cual se
-                        construye un proyecto exitoso.</p>
+                    <p>TToda creación comienza con una Idea Base, como cimientos sólidos para un proyecto exitoso.</p>
                 </div>
             </div>
             <div class="included-text">
                 <div class="included-text">
-                    <p>Originalidad y Valor: La Idea Base debe ofrecer algo unico y valioso. Ya sea resolviendo un
-                        problema existente, satisfaciendo una necesidad no cubierta o presentando una perspectiva
-                        fresca, la originalidad y el valor son esenciales.</p>
+                    <p>La Idea Base debe ser única y valiosa, resolviendo problemas, satisfaciendo necesidades o
+                        aportando una perspectiva fresca.</p>
                 </div>
             </div>
         </div>
@@ -102,8 +116,8 @@
             <div class="grid-item">
                 <div class="text">
                     <h2>Viabilidad</h2>
-                    <p>Evaluar la viabilidad de la idea es crucial. Es factible implementarla con los recursos
-                        disponibles? Puede adaptarse a las condiciones cambiantes del entorno?</p>
+                    <p>Evaluar la viabilidad es clave: ¿Se puede implementar con recursos disponibles? ¿Puede adaptarse
+                        a cambios en el entorno?</p>
                     <div class="included-text">
                         <p>Escoje un Logo atractivo que mas te guste para que las personas se sientan comodas viendo tu
                             logo al momento de crear tus proyectos</p>
@@ -258,24 +272,69 @@
             <h3>Marck zuckerberg</h3>
             <p>Bueno ya todos sabemos quien es,no?.</p>
             <div class="included-text">
-                <p> mi camino se ha forjado a traves de la búsqueda constante de la conexión global, la ambicion de
-                    crear tecnologia que acerque a las personas y la capacidad de adaptarme rapidamente a un entorno en
-                    constante cambio. Siempre he valorado la innovacion, el aprendizaje continuo y la construccion de
-                    comunidades significativas en todo lo que hago.</p>
+                <p> Mi camino se define por conectar globalmente, crear tecnología, adaptarme ágilmente y valorar la
+                    innovación y comunidades significativas.</p>
             </div>
             <h3> Y Facebook?</h3>
-            <p>estaria enfocado en la mision de conectar a las personas y construir una comunidad global a traves de la
-                tecnología. Crearía y desarrollaría productos innovadores que permitan a las personas compartir y
-                comunicarse de manera más efectiva. Además, me esforzaría por mantener la seguridad y la privacidad de
-                los usuarios como una prioridad fundamental, abordando de manera proactiva los desafíos y preocupaciones
-                éticas relacionadas con la tecnología y las redes sociales. La colaboración con expertos en diversas
-                áreas y la búsqueda constante de aprendizaje serían elementos clave para impulsar el éxito y la
-                evolución continua de mis proyectos y empresas.</p>
+            <p>Mi misión sería conectar a las personas globalmente a través de la tecnología, creando productos
+                innovadores para una comunicación efectiva. Priorizaría la seguridad y privacidad, abordando desafíos
+                éticos. Colaboración y aprendizaje constante serían fundamentales para el éxito y la evolución de mis
+                proyectos.</p>
             <div class="included-text">
                 <p>Meta-verso?</p>
             </div>
         </div>
+        <script src="../main.js"></script>
     </div>
+    <!-- Icono de activación del chat -->
+    <!-- Contenedor de la imagen de activación del chat -->
+    <div class="chat-icon" id="chatIcon">
+        <img src="../IMG/robot (3).gif" alt="Imagen del chat">
+    </div>
+
+
+    <!-- Contenedor del chat oculto -->
+    <div class="chat-container" id="chatContainer">
+        <div class="chat-header">
+            <div class="profile-icon">
+                <a>Neura</a>
+            </div>
+        </div>
+        <div class="chat-content">
+            <div class="chatlog" id="chatlog">
+                <!-- Mensaje de ejemplo con imagen -->
+                <div class="message">
+                    <img src="../IMG/robot (3).gif" alt="Imagen de respuesta">
+                    <p>Hola, Soy Neura-X. Te enseño un menu donde me puedes preguntar lo que quieras.</p>
+                </div>
+                <!-- Agrega más mensajes como este según sea necesario -->
+            </div>
+
+            <!-- Nuevo menú de preguntas -->
+            <div class="menu" id="menu">
+                <h3>Preguntas que puedo hacer</h3>
+                <ul>
+                    <li>- dónde puedo encontrar los cursos</li>
+                    <li>- quiero un curso Gratuito</li>
+                    <li>- como puedo hablar con EPSA</li>
+                    <li>- cómo puedo Mandar una queja</li>
+                    <li>- tienen redes sociales</li>
+                    <li>- como puedes moverte por la pagina</li>
+                    <li>- como va el trading</li>
+                    <li>- no encuentro las convocatorias</li>
+                    <!-- Agrega más preguntas según sea necesario -->
+                </ul>
+            </div>
+
+            <div class="user-input">
+                <input type="text" id="userInput" placeholder="Escribe tu mensaje aquí">
+                <button id="sendButton">Enviar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../Neura-X/main.js"></script>
+    <script src="../Neura-X/Chat.js"></script>
     <footer class="footer">
         <div class="footer-links">
             <div class="footer-section">
