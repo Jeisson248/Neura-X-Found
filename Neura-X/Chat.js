@@ -28,19 +28,19 @@ document.addEventListener('DOMContentLoaded', function () {
         if (userMessage.includes('dónde puedo encontrar los cursos')) {
             chatbotResponse = "Vaya que interes por aprender, dirigete a la barra de navegacion que se encuentra en la parte superior de la pagina, encontraras 7 opciones dale click a la 5 opcion que se llama transparencia ahi podras encontrar la seccion de cursos y puedes escojer todo lo que te interese";
         } else if (userMessage.includes('quiero un curso gratuito')) {
-            chatbotResponse = "Reespuesta 2";
+            chatbotResponse = "Claro que si, ve a la opcion de dirigete a la barra de navegacion que se encuentra en la parte superior de la pagina, encontraras 7 opciones dale click a la 5 opcion que se llama transparencia ahi podras encontrar la seccion de cursos podras escojer los cursos gratuitos "; ";
         } else if (userMessage.includes('cómo puedo hablar con EPSA')) {
-            chatbotResponse = "Reespuesta 3";
+            chatbotResponse = "Claro que si, ve a la opcion de ayuda, resolucion de problemas alli encontraras un item que se llama innovacion y se te abrira automaticamente nuestro ChatBot EPSA";
         } else if (userMessage.includes('cómo puedo mandar una queja')) {
-            chatbotResponse = "Reespuesta 4";
+            chatbotResponse = "Claro que si, ve a la parte final de la pagina en la que estes, da click en centro de seguridad y se te abrira automaticamente un formulario para para que nos cuentes mas sobre tu falla";
         } else if (userMessage.includes('tienen redes sociales')) {
-            chatbotResponse = "Reespuesta 5";
+            chatbotResponse = "Claro que si, desde la pagina principal podras observar los iconos de nuestras redes sociales, una vez te loguues tambien los encontraras en la parte inferior de la pagina ";
         } else if (userMessage.includes('cómo puedo moverme por la página')) {
-            chatbotResponse = "Reespuesta 6";
+            chatbotResponse = "Claro que si, es muy sencillo solo tienes que registarte para entrar y validar cada espacio que hemos adecuado para ti ";
         } else if (userMessage.includes('cómo va el trading')) {
-            chatbotResponse = "Reespuesta 7";
+            chatbotResponse = "Claro que si, tenemos una opcion que te podra dejar ver las  estadisticas del trading en tiempo real";
         } else if (userMessage.includes('no encuentro las convocatorias')) {
-            chatbotResponse = "Reespuesta 8";
+            chatbotResponse = "Claro que si, es muy facil esta a la parte superior de nuestra pagina encontraras un apaartado directamnete que te muestra las convocatorias";
         } else {
             chatbotResponse = "Lo siento, no entiendo tu pregunta. ¿En qué más puedo ayudarte?";
         }
