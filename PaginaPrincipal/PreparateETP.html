@@ -18,15 +18,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
     <style>
         p::first-letter {
-          text-transform: uppercase;
+            text-transform: uppercase;
         }
-      </style>
+    </style>
 </head>
 
 <body>
     <header>
         <nav class="navbar navbar-expand-md bg-primary navbar-dark rounded-top">
-            <a class="navbar-brand" href="/Index.html">
                 <img src="../IMG/Tiburon.png" alt="Mi Logo" class="rounded-circle logo-img">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -50,9 +49,12 @@
                     <div class="profile-container" id="profileContainer">
                         <!-- Menú desplegable -->
                         <ul class="dropdown-menu" id="dropdownMenu">
-                            <li id="changeProfile"><i class="fas fa-camera"></i>Cambiar foto de perfil</li>
-                            <li id="viewManual"><i class="fas fa-book"></i>Ver manual de usuario</li>
-                            <li id="logout"><i class="fas fa-sign-out-alt"></i>Cerrar sesión</li>
+                            <ul class="dropdown-menu" id="dropdownMenu">
+                                <li id="changeProfile"><i class="fas fa-camera"></i>Cambiar foto de perfil</li>
+                                <li id="logout"><i class="fas fa-sign-out-alt"></i><a href="../Iniciosesion.html">Cerrar
+                                        sesión</a></li>
+                            </ul>
+
                         </ul>
 
                         <!-- Contenedor de la imagen de perfil -->
@@ -86,11 +88,12 @@
         <div class="cuadro-texto">
             <h3>Necesitas un poco de ayuda, No?</h3>
             <p>No sabes como procesar el pago? tomalo con calma, te ayudamos a realizarlo</p>
-            <li>Escoje un tema que sea de tu agrado, tienes muchos a escojer</li>
-            <li>como segundo paso , presiona el boton de compra y escoje tu metodo de pago favorito</li>
-            <li>llena el formulario con tu informacion y con tu metodo de pago favorito</li>
-            <li>Cuidado , no compartas tu informacion de compras!</li>
-            <li>todo listo?,Genial! disfruta de tu compra y formate con nosotros</li>
+            <p>Escoge un tema que sea de tu agrado; tienes muchos entre los cuales elegir. Como segundo paso, presiona
+                el botón de compra y selecciona tu método de pago favorito. Llena el formulario con tu información y
+                elige tu método de pago preferido. ¡Ten cuidado! No compartas tu información de compra. ¿Todo listo?
+                ¡Genial! Disfruta de tu compra y forma parte de nuestra comunidad.
+
+            </p>
         </div>
         <div class="cuadro-texto">
             <h3>Tienes alguna queja? Comentamos qué pasa.</h3>
@@ -118,8 +121,8 @@
         <div class="cuadro">
             <img src="../IMG/codigo-html.png" alt="Producto 2">
             <h3> Desarrollo de Frontend.</h3>
-            <p>"Explora el emocionante Desarrollo Frontend, aprende HTML, CSS y JavaScript para crear interfaces web
-                dinámicas y atractivas."</p>
+            <p>Explora el emocionante Desarrollo Frontend, aprende HTML, CSS y JavaScript para crear interfaces web
+                dinámicas y atractivas.</p>
             <a href="https://www.pse.com.co/persona/">
                 <button class="boton-compra">Comprar $1 USD</button>
             </a>
@@ -128,9 +131,9 @@
             <img src="../IMG/curso2.png" alt="Producto 2">
             <h3>Dale estilo a tus ideas</h3>
             <p>
-                "Sumérgete en el mundo creativo del diseño web con CSS y da vida a tus proyectos digitales. Aprende a
-                utilizar hojas de estilo en cascada (CSS) para crear páginas web atractivas y amigables para los
-                usuarios, desde los fundamentos hasta técnicas avanzadas, incluyendo el diseño responsivo."</p>
+                Explora el diseño web con CSS y da vida a tus proyectos digitales. Aprende a usar hojas de estilo en
+                cascada (CSS) para crear páginas web atractivas y amigables para los usuarios, desde lo básico hasta
+                técnicas avanzadas, incluyendo el diseño responsivo.</p>
             <a href="https://www.pse.com.co/persona/">
                 <button class="boton-compra">Comprar $1 USD</button>
             </a>
@@ -138,8 +141,8 @@
         <div class="cuadro">
             <img src="../IMG/CerebroIA.png" alt="Producto 2">
             <h3>Manejo de inteligencia artificial</h3>
-            <p>"Descubre el poder de la inteligencia artificial, desde conceptos básicos hasta niveles avanzados, y cómo
-                impacta en la vida diaria, impulsando la automatización y la eficiencia en diferentes áreas."</p>
+            <p>Descubre el poder de la inteligencia artificial, desde conceptos básicos hasta niveles avanzados, y cómo
+                impacta en la vida diaria, impulsando la automatización y la eficiencia en diferentes áreas.</p>
             <a href="https://www.pse.com.co/persona/">
                 <button class="boton-compra">Comprar $1 USD</button>
             </a>
@@ -147,10 +150,8 @@
         <div class="cuadro">
             <img src="../IMG/manos.png" alt="Producto 2">
             <h3>Y las IA's?</h3>
-            <p>A través de casos de estudio y ejemplos prácticos, adquirirás una comprensión profunda de las diversas
-                aplicaciones y beneficios que las IA ofrecen. Al final del curso, estarán equipados con conocimientos
-                sólidos sobre las distintas IA, cómo se clasifican y cómo están dando forma al futuro en innumerables
-                campos."</p>
+            <p>Con casos de estudio y ejemplos prácticos, comprenderás aplicaciones y ventajas de la IA. Al final,
+                dominarás tipos de IA, clasificación e influencia en diversos campos.</p>
             <a href="https://www.pse.com.co/persona/">
                 <button class="boton-compra">Comprar $1 USD</button>
             </a>
@@ -158,14 +159,8 @@
         <div class="cuadro">
             <img src="../IMG/terapia.gif" alt="Producto 2">
             <h3>Comunicativa en desarrollo</h3>
-            <p>Explorarás cómo la comunicación efectiva puede impulsar el éxito en diversas áreas, desde el entorno
-                laboral hasta las relaciones familiares y sociales. A través de ejemplos prácticos y ejercicios
-                interactivos, aprenderás a superar las barreras de comunicación, mejorarás la persuasión y presentarás
-                ideas de manera convincente.
-
-                Al finalizar el curso, habrás adquirido las herramientas necesarias para comunicarte con confianza y
-                desarrollarte personalmente en un mundo cada vez más interconectado. Únete a nosotros y desbloquea tu
-                potencial para convertirte en un comunicador influyente y empático en todas las facetas de la vida."</p>
+            <p>Potencia tus habilidades de comunicación para el éxito en tu vida personal y profesional. Al finalizar,
+                serás un comunicador influyente.</p>
             <a href="https://www.pse.com.co/persona/">
                 <button class="boton-compra">Comprar $1 USD</button>
             </a>
@@ -173,16 +168,8 @@
         <div class="cuadro">
             <img src="../IMG/base-de-datos.gif" alt="Producto 2">
             <h3>Asegura tus conocimientos</h3>
-            <p>Explorarás cómo diseñar estructuras de datos eficientes, normalizar tablas y establecer relaciones para
-                garantizar la integridad y la confiabilidad de los datos almacenados. Aprenderás a crear consultas
-                complejas para extraer información específica ya utilizar lenguajes como SQL para manipular y gestionar
-                datos de manera eficiente.
-
-                A través de ejercicios prácticos y proyectos reales, te familiarizarás con herramientas de DBMS
-                populares y desarrollarás habilidades prácticas para administrar bases de datos de manera efectiva.
-                Desde la gestión de inventario hasta el análisis de datos comerciales, las bases de datos son la columna
-                vertebral de la era digital y este curso te preparará para dominar su uso y aplicación en el mundo
-                real."</p>
+            <p>Domina diseño de datos, SQL y gestión de bases de datos con ejercicios prácticos para aplicaciones del
+                mundo real, desde inventarios hasta análisis de datos comerciales.</p>
             <a href="https://www.pse.com.co/persona/">
                 <button class="boton-compra">Comprar $1 USD</button>
             </a>
@@ -196,17 +183,14 @@
         <div class="cuadro">
             <img src="../IMG/bitcoin111.gif" alt="Producto 2">
             <h3>Bit-coin?</h3>
-            <p>Todos conocemos el mundo de las criptomonedas y sabemos que son y su gran valor , te enseñamos como crear
-                y como manejar todo lo relacionado al mundo de las monedas y criptomonedas mas famosas y claro las
-                mejores para manejar las inversiones</p>
+            <p>Descubre cómo crear y gestionar criptomonedas y las mejores inversiones en este mundo. Domina las monedas
+                y criptomonedas más famosas.</p>
             <a class="boton-compra" href="../PaginaPrincipal/aprendeaE.html">Aprende a emprender</a>
         </div>
         <div class="cuadro">
             <img src="../IMG/clasificacion.gif" alt="Producto 2">
             <h3>Y como te das a conocer?</h3>
-            <p>En el mundo del marketing sabemos que tenemos mucha competencia pero bueno de eso se trata de asumir el
-                riesgo y de salir a deborar a la competencia , preparate con nosotros y entiende como sobre salir
-                publicitando y dandole imagen a tus mejores ideas</p>
+            <p>Destaca en marketing, vence a la competencia, y da vida a tus ideas con nosotros.</p>
             <a class="boton-compra" href="../PaginaPrincipal/aprendeaE.html">Aprende a emprender</a>
         </div>
         <div class="cuadro">
@@ -219,18 +203,15 @@
         <div class="cuadro">
             <img src="../IMG/insignia-de-video.gif" alt="Producto 2">
             <h3>Soñaste con la creaccion de contenido?</h3>
-            <p>Tal vez esto sea muy parecido al punto del curso anterior pero queremos que veas mas a fondo el poder de
-                crear contenido con tu marca y explocarte como podemos mostrarte el mundo de la publicidad y los
-                anuncios personalizados </p>
+            <p>Explora el poder de crear contenido con tu marca y descubre cómo la publicidad y los anuncios
+                personalizados pueden impulsar tu presencia en el mercado.</p>
             <a class="boton-compra" href="../PaginaPrincipal/aprendeaE.html">Aprende a emprender</a>
         </div>
         <div class="cuadro">
             <img src="../IMG/inversion.png" alt="Producto 2">
             <h3>Traders?</h3>
-            <p>Por que nos da miedo invertir? es la pregunta que todos nos hacemos en algun momento , tal vez podamos
-                ganar o perder dinero? veamos que pasa no? te enseñamos como funcionan el mundo de las inversiones y en
-                donde es la mejor opcion para invertir tus fondos y como debes usar tu dinero si es la primera vez que
-                lo haces </p>
+            <p>¿Por qué nos asusta invertir? Todos nos lo preguntamos en algún momento. ¿Ganar o perder dinero? Descubre
+                cómo funcionan las inversiones, dónde invertir y cómo gestionar tu dinero si es tu primera vez.</p>
             <a class="boton-compra" href="../PaginaPrincipal/aprendeaE.html">Aprende a emprender</a>
         </div>
         <script src="../main.js"></script>
@@ -254,27 +235,22 @@
                 <!-- Mensaje de ejemplo con imagen -->
                 <div class="message">
                     <img src="../IMG/robot (3).gif" alt="Imagen de respuesta">
-                    <p>Hola, Soy Neura-X. Te enseño un menu donde me puedes preguntar lo que quieras.</p>
+                    <p>Hola, Soy Neura-X. Te enseño como puedes navegar por aqui.</p>
                 </div>
+                <ul>
+                    <li>dónde puedo encontrar los cursos</li>
+                    <li>quiero un curso gratuito</li>
+                    <li>cómo puedo hablar con epsa</li>
+                    <li>cómo puedo mandar una queja</li>
+                    <li>tienen redes sociales</li>
+                    <li>cómo puedo moverme por la página</li>
+                    <li>cómo va el trading</li>
+                    <li>no encuentro las convocatorias</li>
+                </ul>
                 <!-- Agrega más mensajes como este según sea necesario -->
             </div>
 
             <!-- Nuevo menú de preguntas -->
-            <div class="menu" id="menu">
-                <h3>Preguntas que puedo hacer</h3>
-                <ul>
-                    <li>- dónde puedo encontrar los cursos</li>
-                    <li>- quiero un curso Gratuito</li>
-                    <li>- como puedo hablar con EPSA</li>
-                    <li>- cómo puedo Mandar una queja</li>
-                    <li>- tienen redes sociales</li>
-                    <li>- como puedes moverte por la pagina</li>
-                    <li>- como va el trading</li>
-                    <li>- no encuentro las convocatorias</li>
-                    <!-- Agrega más preguntas según sea necesario -->
-                </ul>
-            </div>
-
             <div class="user-input">
                 <input type="text" id="userInput" placeholder="Escribe tu mensaje aquí">
                 <button id="sendButton">Enviar</button>
@@ -288,7 +264,7 @@
         <div class="footer-links">
             <div class="footer-section">
                 <h4>Acerca de</h4>
-                <a href="../Index.html">Conocenos aqui</a>
+                <a href="../PaginaPrincipal/nosotros.html">Conocenos aqui</a>
             </div>
             <div class="footer-section">
                 <h4>Otros sitios</h4>

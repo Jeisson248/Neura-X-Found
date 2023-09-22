@@ -4,9 +4,55 @@ document.addEventListener('DOMContentLoaded', () => {
     const dropdownMenu = document.getElementById('dropdownMenu');
     const profileImage = document.getElementById('profileImage');
 
-    // Mostrar/ocultar el menú desplegable al hacer clic en el icono de perfil
-    profileIcon.addEventListener('click', () => {
-        dropdownMenu.style.display = (dropdownMenu.style.display === 'block') ? 'none' : 'block';
+    // Variable para rastrear el estado del menú
+    let menuOpen = false;
+
+    // Función para abrir y cerrar el menú desplegable
+    const toggleMenu = () => {
+        if (menuOpen) {
+            dropdownMenu.style.display = 'none';
+        } else {
+            dropdownMenu.style.display = 'block';
+        }
+        menuOpen = !menuOpen;
+    };
+
+    // Función para recargar la página actual
+    const reloadPage = () => {
+        // Eliminar la entrada actual en el historial de navegación
+        if (window.history && window.history.replaceState) {
+            window.history.replaceState(null, null, window.location.href);
+        }
+        location.reload();
+    };
+
+    // Función para redirigir al formulario de cierre de sesión
+    const redirectToLogoutForm = () => {
+        // Redirige a la página del formulario de cierre de sesión
+        window.location.href = '../Iniciosesion.html';
+    };
+
+    // Evento para redirigir al hacer clic en "Cerrar sesión"
+    document.getElementById('logout').addEventListener('click', (event) => {
+        // Evita que el menú se cierre inmediatamente al hacer clic en "Cerrar sesión"
+        event.stopPropagation();
+        redirectToLogoutForm();
+    });
+
+    // Evento para abrir y cerrar el menú al hacer clic en el icono de perfil
+    profileIcon.addEventListener('click', (event) => {
+        // Evitar que el clic se propague y cierre el menú de inmediato
+        event.stopPropagation();
+        toggleMenu();
+        console.log('Toggle menu clicked');
+    });
+
+    // Evento para cerrar el menú si se hace clic en cualquier parte fuera del menú
+    document.addEventListener('click', () => {
+        if (menuOpen) {
+            dropdownMenu.style.display = 'none';
+            menuOpen = false;
+        }
     });
 
     // Verificar si hay una imagen de perfil almacenada en el LocalStorage
@@ -15,7 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
         profileImage.src = savedProfileImage;
     }
 
-    // Resto del código para cambiar la foto de perfil
+    // Evento para cambiar la foto de perfil
     const changeProfile = document.getElementById('changeProfile');
 
     changeProfile.addEventListener('click', () => {
@@ -46,5 +92,12 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         fileInput.click();
+    });
+
+    // Evitar que el usuario vuelva atrás en la página de inicio de sesión
+    window.addEventListener('load', function () {
+        // Usar la API del historial para reemplazar la entrada actual en el historial
+        // Esto evita que el usuario vuelva atrás a esta página después de cerrar sesión
+        window.history.replaceState(null, null, window.location.href);
     });
 });

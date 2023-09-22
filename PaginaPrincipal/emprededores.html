@@ -22,17 +22,17 @@
     <link rel="stylesheet" href="styles.css">
     <style>
         p::first-letter {
-          text-transform: uppercase;
+            text-transform: uppercase;
         }
-      </style>
+    </style>
     <title>Neura-X-Found</title>
 </head>
 
 <body>
     <header>
         <nav class="navbar navbar-expand-md bg-primary navbar-dark rounded-top">
-            <a class="navbar-brand" href="../Index.html">
-                <img src="../IMG/Tiburon.png" alt="Mi Logo" class="rounded-circle logo-img">
+
+            <img src="../IMG/Tiburon.png" alt="Mi Logo" class="rounded-circle logo-img">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -57,9 +57,12 @@
                     <div class="profile-container" id="profileContainer">
                         <!-- Menú desplegable -->
                         <ul class="dropdown-menu" id="dropdownMenu">
-                            <li id="changeProfile"><i class="fas fa-camera"></i>Cambiar foto de perfil</li>
-                            <li id="viewManual"><i class="fas fa-book"></i>Ver manual de usuario</li>
-                            <li id="logout"><i class="fas fa-sign-out-alt"></i>Cerrar sesión</li>
+                            <ul class="dropdown-menu" id="dropdownMenu">
+                                <li id="changeProfile"><i class="fas fa-camera"></i>Cambiar foto de perfil</li>
+                                <li id="logout"><i class="fas fa-sign-out-alt"></i><a href="../Iniciosesion.html">Cerrar
+                                        sesión</a></li>
+                            </ul>
+
                         </ul>
 
                         <!-- Contenedor de la imagen de perfil -->
@@ -81,9 +84,8 @@
         <div class="box">
             <img class="image" src="../IMG/pregunta.png" alt="Imagen 1">
             <h2>Y si no tengo apoyo?</h2>
-            <p>Tranquilo,ven y busca lo que necesitas con nosotros, te mostramos como puedes contactar con uno de
-                nuestros asesores para que tu emprendimiento mejore o si conoces a alguien pueden seguir los pasos que
-                te daremos a continuacion</p>
+            <p>Tranquilo, ven con nosotros y obtén la ayuda que necesitas para mejorar tu emprendimiento. Te mostraremos
+                cómo contactar a uno de nuestros asesores. Sigue los pasos que te proporcionaremos.</p>
             <div class="icon-box">
                 <img class="image" src="../IMG/charla-de-burbujas.gif" alt="Imagen 1">
                 <img class="image" src="../IMG/presentacion.gif" alt="Imagen 1">
@@ -93,9 +95,8 @@
         <div class="box">
             <img class="image" src="../IMG/banco.gif" alt="Imagen 2">
             <h2>Aprende a manejar tus inversiones</h2>
-            <p>Establece Objetivos Claros: Antes de comenzar a invertir, define tus objetivos financieros. ¿Estás
-                buscando crecimiento a largo plazo, ingresos regulares o preservación de capital? Tus objetivos
-                influirán en las decisiones de inversión que tomes.</p>
+            <p>Establece objetivos financieros claros antes de invertir. ¿Buscas crecimiento a largo plazo, ingresos
+                regulares o preservación de capital? Tus objetivos guiarán tus decisiones de inversión</p>
             <div class="icon-box">
                 <img class="image" src="../IMG/tarjeta-de-credito (1).gif" alt="Imagen 1">
                 <img class="image" src="../IMG/corazon.gif" alt="Imagen 1">
@@ -103,11 +104,10 @@
             </div>
         </div>
         <div class="box">
-            <h2>como busco un patrocinador</h2>
-            <p>Identifica a los Patrocinadores Potenciales: Investiga y crea una lista de posibles patrocinadores que
-                estén alineados con tu industria, valores y objetivos. Esto podría incluir empresas, fundaciones,
-                inversores ángeles, organizaciones sin fines de lucro o individuos interesados en tu área .</p>
             <img class="image" src="../IMG/bitcoin.gif" alt="Imagen 3">
+            <h2>como busco un patrocinador</h2>
+            <p>Identifica a posibles patrocinadores alineados con tu industria, valores y objetivos, como empresas,
+                fundaciones, inversores, organizaciones sin fines de lucro o individuos interesados.</p>
             <div class="icon-box">
                 <img class="image" src="../IMG/charla-de-burbujas.gif" alt="Imagen 1">
                 <img class="image" src="../IMG/presentacion.gif" alt="Imagen 1">
@@ -115,17 +115,21 @@
             </div>
         </div>
         <div class="box">
-            <h2>Si deseas conocer mas sobre algunos emprendedores mira aqui</h2>
-            <p>Dale un vistazo a nuestro foro para que veas los proyectos y patrocinios que tenemos para ti</p>
+            <h2> Conoce a Emprendedores</h2>
+            <p>Explora nuestro foro y sumérgete en historias de éxito. Encuentra proyectos emocionantes y oportunidades
+                de patrocinio para inspirarte en tu propio camino emprendedor. ¡Tu motivación te espera aquí!</p>
         </div>
 
         <div class="box">
-            <h2>Recuerda que debes planear bien tus inversiones para que no pierdas tu dinero</h2>
-            <p>En este espacio conoce y crea tus ideas en proyectos que mejor se te den para ti </p>
+            <h2>Planifica Tus Inversiones con Cuidado</h2>
+            <p>Este espacio te permite descubrir y dar vida a tus ideas, convirtiéndolas en proyectos que se ajusten
+                perfectamente a tus habilidades y pasiones. ¡Es tu oportunidad de crear algo grandioso para ti! </p>
         </div>
         <div class="box">
-            <h2>Necesitas un Mas informacion? dale un vistazo a nuestro E - Commerce</h2>
-            <p>Recuerda ver todas las ideas para que a lo mejor puedas colaborar o incluso hacerte parte</p>
+            <h2>Explora Nuestro E-Commerce</h2>
+            <p>No te pierdas ninguna oportunidad. Explora todas las ideas y proyectos en nuestra comunidad. Aquí, tienes
+                la posibilidad de colaborar, aprender y, quizás, convertirte en parte de algo increíble. ¡La próxima
+                gran oportunidad podría estar a solo un clic de distancia!</p>
             <a href="../e-comerce/index.html">E - Commerce</a>
 
         </div>
@@ -150,27 +154,20 @@
                 <!-- Mensaje de ejemplo con imagen -->
                 <div class="message">
                     <img src="../IMG/robot (3).gif" alt="Imagen de respuesta">
-                    <p>Hola, Soy Neura-X. Te enseño un menu donde me puedes preguntar lo que quieras.</p>
+                    <p>Hola, Soy Neura-X. Te enseño como puedes navegar por aqui.</p>
                 </div>
+                <ul>
+                    <li>dónde puedo encontrar los cursos</li>
+                    <li>quiero un curso gratuito</li>
+                    <li>cómo puedo hablar con epsa</li>
+                    <li>cómo puedo mandar una queja</li>
+                    <li>tienen redes sociales</li>
+                    <li>cómo puedo moverme por la página</li>
+                    <li>cómo va el trading</li>
+                    <li>no encuentro las convocatorias</li>
+                </ul>
                 <!-- Agrega más mensajes como este según sea necesario -->
             </div>
-
-            <!-- Nuevo menú de preguntas -->
-            <div class="menu" id="menu">
-                <h3>Preguntas que puedo hacer</h3>
-                <ul>
-                    <li>- dónde puedo encontrar los cursos</li>
-                    <li>- quiero un curso Gratuito</li>
-                    <li>- como puedo hablar con EPSA</li>
-                    <li>- cómo puedo Mandar una queja</li>
-                    <li>- tienen redes sociales</li>
-                    <li>- como puedes moverte por la pagina</li>
-                    <li>- como va el trading</li>
-                    <li>- no encuentro las convocatorias</li>
-                    <!-- Agrega más preguntas según sea necesario -->
-                </ul>
-            </div>
-
             <div class="user-input">
                 <input type="text" id="userInput" placeholder="Escribe tu mensaje aquí">
                 <button id="sendButton">Enviar</button>
@@ -184,7 +181,7 @@
         <div class="footer-links">
             <div class="footer-section">
                 <h4>Acerca de</h4>
-                <a href="../Index.html">Conocenos aqui</a>
+                <a href="../PaginaPrincipal/nosotros.html">Conocenos aqui</a>
             </div>
             <div class="footer-section">
                 <h4>Otros sitios</h4>

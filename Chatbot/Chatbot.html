@@ -12,17 +12,17 @@
     <!-- Agrega la referencia a los archivos de Bootstrap -->
     <style>
         p::first-letter {
-          text-transform: uppercase;
+            text-transform: uppercase;
         }
-      </style>
+    </style>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- Agrega la referencia al archivo de slick -->
 
 </head>
 <header>
     <nav class="navbar navbar-expand-md bg-primary navbar-dark rounded-top">
-        <a class="navbar-brand" href="../PaginaPrincipal/">
-            <img src="../IMG/Tiburon.png" alt="Mi Logo" class="rounded-circle logo-img">
+
+        <img src="../IMG/Tiburon.png" alt="Mi Logo" class="rounded-circle logo-img">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,11 +46,13 @@
             <div class="profile-container" id="profileContainer">
                 <!-- Menú desplegable -->
                 <ul class="dropdown-menu" id="dropdownMenu">
-                    <li id="changeProfile"><i class="fas fa-camera"></i>Cambiar foto de perfil</li>
-                    <li id="viewManual"><i class="fas fa-book"></i>Ver manual de usuario</li>
-                    <li id="logout"><i class="fas fa-sign-out-alt"></i>Cerrar sesión</li>
-                </ul>
+                    <ul class="dropdown-menu" id="dropdownMenu">
+                        <li id="changeProfile"><i class="fas fa-camera"></i>Cambiar foto de perfil</li>
+                        <li id="logout"><i class="fas fa-sign-out-alt"></i><a href="../Iniciosesion.html">Cerrar
+                                sesión</a></li>
+                    </ul>
 
+                </ul>
                 <!-- Contenedor de la imagen de perfil -->
                 <div class="profile-image-container">
                     <!-- Icono de perfil -->
@@ -130,7 +132,8 @@
             <img src="../IMG/openai.webp" class="profile-icon" alt="Perfil">
             <h2>Openai</h2>
         </div>
-        <p>Open AI te ofrece las mejores herramientas para el desarrollo virtual de tu proyecto en base a tus necesidades
+        <p>Open AI te ofrece las mejores herramientas para el desarrollo virtual de tu proyecto en base a tus
+            necesidades
             o como gustes acomodarte a tu entorno web </p>
         <a href="https://chat.openai.com/">Descubre mas aqui</a>
     </div>
@@ -164,7 +167,7 @@
 <div class="footer-links">
     <div class="footer-section">
         <h4>Acerca de</h4>
-        <a href="../Index.html">Conocenos aqui</a>
+        <a href="../PaginaPrincipal/nosotros.html">Conocenos aqui</a>
     </div>
     <div class="footer-section">
         <h4>Otros sitios</h4>

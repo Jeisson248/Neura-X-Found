@@ -15,16 +15,16 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
     <style>
         p::first-letter {
-          text-transform: uppercase;
+            text-transform: uppercase;
         }
-      </style>
+    </style>
 </head>
 
 <body>
     <header>
         <nav class="navbar navbar-expand-md bg-primary navbar-dark rounded-top">
-            <a class="navbar-brand" href="../Index.html">
-                <img src="../IMG/Tiburon.png" alt="Mi Logo" class="rounded-circle logo-img">
+
+            <img src="../IMG/Tiburon.png" alt="Mi Logo" class="rounded-circle logo-img">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,11 +49,13 @@
                     <div class="profile-container" id="profileContainer">
                         <!-- Menú desplegable -->
                         <ul class="dropdown-menu" id="dropdownMenu">
-                            <li id="changeProfile"><i class="fas fa-camera"></i>Cambiar foto de perfil</li>
-                            <li id="viewManual"><i class="fas fa-book"></i>Ver manual de usuario</li>
-                            <li id="logout"><i class="fas fa-sign-out-alt"></i>Cerrar sesión</li>
-                        </ul>
+                            <ul class="dropdown-menu" id="dropdownMenu">
+                                <li id="changeProfile"><i class="fas fa-camera"></i>Cambiar foto de perfil</li>
+                                <li id="logout"><i class="fas fa-sign-out-alt"></i><a href="../Iniciosesion.html">Cerrar
+                                        sesión</a></li>
+                            </ul>
 
+                        </ul>
                         <!-- Contenedor de la imagen de perfil -->
                         <div class="profile-image-container">
                             <!-- Icono de perfil -->
@@ -110,25 +112,19 @@
                     <!-- Mensaje de ejemplo con imagen -->
                     <div class="message">
                         <img src="../IMG/robot (3).gif" alt="Imagen de respuesta">
-                        <p>Hola, Soy Neura-X. Te enseño un menu donde me puedes preguntar lo que quieras.</p>
+                        <p>Hola, Soy Neura-X. Te enseño como puedes navegar por aqui.</p>
                     </div>
-                    <!-- Agrega más mensajes como este según sea necesario -->
-                </div>
-
-                <!-- Nuevo menú de preguntas -->
-                <div class="menu" id="menu">
-                    <h3>Preguntas que puedo hacer</h3>
                     <ul>
-                        <li>- dónde puedo encontrar los cursos</li>
-                        <li>- quiero un curso Gratuito</li>
-                        <li>- como puedo hablar con EPSA</li>
-                        <li>- cómo puedo Mandar una queja</li>
-                        <li>- tienen redes sociales</li>
-                        <li>- como puedes moverte por la pagina</li>
-                        <li>- como va el trading</li>
-                        <li>- no encuentro las convocatorias</li>
-                        <!-- Agrega más preguntas según sea necesario -->
+                        <li>dónde puedo encontrar los cursos</li>
+                        <li>quiero un curso gratuito</li>
+                        <li>cómo puedo hablar con epsa</li>
+                        <li>cómo puedo mandar una queja</li>
+                        <li>tienen redes sociales</li>
+                        <li>cómo puedo moverme por la página</li>
+                        <li>cómo va el trading</li>
+                        <li>no encuentro las convocatorias</li>
                     </ul>
+                    <!-- Agrega más mensajes como este según sea necesario -->
                 </div>
 
                 <div class="user-input">
@@ -145,7 +141,7 @@
             <div class="footer-links">
                 <div class="footer-section">
                     <h4>Acerca de</h4>
-                    <a href="../Index.html">Conocenos aqui</a>
+                    <a href="../PaginaPrincipal/nosotros.html">Conocenos aqui</a>
                 </div>
                 <div class="footer-section">
                     <h4>Otros sitios</h4>

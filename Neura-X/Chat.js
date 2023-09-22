@@ -26,21 +26,21 @@ document.addEventListener('DOMContentLoaded', function () {
         let chatbotResponse;
 
         if (userMessage.includes('dónde puedo encontrar los cursos')) {
-            chatbotResponse = "Vaya que interes por aprender, dirigete a la barra de navegacion que se encuentra en la parte superior de la pagina, encontraras 7 opciones dale click a la 5 opcion que se llama transparencia ahi podras encontrar la seccion de cursos y puedes escojer todo lo que te interese";
+            chatbotResponse = "Vaya, qué interés por aprender. Dirígete a la barra de navegación que se encuentra en la parte superior de la página. Encontrarás 7 opciones; haz clic en la quinta opción que se llama 'Transparencia', ahí podrás encontrar la sección de cursos y puedes escoger todo lo que te interese.";
         } else if (userMessage.includes('quiero un curso gratuito')) {
-            chatbotResponse = "Claro que si, ve a la opcion de dirigete a la barra de navegacion que se encuentra en la parte superior de la pagina, encontraras 7 opciones dale click a la 5 opcion que se llama transparencia ahi podras encontrar la seccion de cursos podras escojer los cursos gratuitos "; ";
-        } else if (userMessage.includes('cómo puedo hablar con EPSA')) {
-            chatbotResponse = "Claro que si, ve a la opcion de ayuda, resolucion de problemas alli encontraras un item que se llama innovacion y se te abrira automaticamente nuestro ChatBot EPSA";
+            chatbotResponse = "Claro que sí. Ve a la opción de 'Transparencia' en la barra de navegación que se encuentra en la parte superior de la página. Ahí podrás encontrar la sección de cursos y podrás escoger los cursos gratuitos.";
+        } else if (userMessage.includes('cómo puedo hablar con epsa')) {
+            chatbotResponse = "Claro que sí, puedes hablar con EPSA. Ve a la opción de 'Ayuda' y luego a 'Resolución de problemas'. Allí encontrarás un ítem que se llama 'Innovación', y se abrirá automáticamente nuestro ChatBot EPSA.";
         } else if (userMessage.includes('cómo puedo mandar una queja')) {
-            chatbotResponse = "Claro que si, ve a la parte final de la pagina en la que estes, da click en centro de seguridad y se te abrira automaticamente un formulario para para que nos cuentes mas sobre tu falla";
+            chatbotResponse = "Claro que sí, puedes enviar una queja. Ve a la parte final de la página en la que estés y haz clic en 'Centro de Seguridad'. Se abrirá automáticamente un formulario para que nos cuentes más sobre tu falla.";
         } else if (userMessage.includes('tienen redes sociales')) {
-            chatbotResponse = "Claro que si, desde la pagina principal podras observar los iconos de nuestras redes sociales, una vez te loguues tambien los encontraras en la parte inferior de la pagina ";
+            chatbotResponse = "Claro que sí. Desde la página principal podrás observar los iconos de nuestras redes sociales. Una vez que inicies sesión, también los encontrarás en la parte inferior de la página.";
         } else if (userMessage.includes('cómo puedo moverme por la página')) {
-            chatbotResponse = "Claro que si, es muy sencillo solo tienes que registarte para entrar y validar cada espacio que hemos adecuado para ti ";
+            chatbotResponse = "Claro que sí, es muy sencillo. Solo tienes que explorar el navvar revisar lo que necesites la interfaz es muy simple para manipular, si te pierdes puedes ver las opciones del footer para que tengas mas claridad,si presentas problemas ve a la seccion N°6 de la navvar y mandanos tus dudas inquietudes o reclamos.";
         } else if (userMessage.includes('cómo va el trading')) {
-            chatbotResponse = "Claro que si, tenemos una opcion que te podra dejar ver las  estadisticas del trading en tiempo real";
+            chatbotResponse = "Claro que sí, tenemos una opción que te permitirá ver las estadísticas del trading en tiempo real.";
         } else if (userMessage.includes('no encuentro las convocatorias')) {
-            chatbotResponse = "Claro que si, es muy facil esta a la parte superior de nuestra pagina encontraras un apaartado directamnete que te muestra las convocatorias";
+            chatbotResponse = "Claro que sí, es muy fácil. Está en la parte superior de nuestra página; encontrarás un apartado que te muestra las convocatorias.";
         } else {
             chatbotResponse = "Lo siento, no entiendo tu pregunta. ¿En qué más puedo ayudarte?";
         }
